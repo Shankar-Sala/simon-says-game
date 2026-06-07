@@ -35,16 +35,20 @@ function userFlash(btn) {
 }
 
 function levelUp() {
+  userSeq = [];
+
   level++;
   h2.innerText = `Level ${level}`;
 
-  //random btn choose
   let randIdx = Math.floor(Math.random() * 4);
   let randColor = btns[randIdx];
 
   let ranbtn = document.querySelector(`.${randColor}`);
+
   gameSeq.push(randColor);
+
   console.log(gameSeq);
+
   gameFlash(ranbtn);
 }
 
@@ -67,7 +71,7 @@ function btnPress() {
   let btn = this; //this = "btn was pressed"
   userFlash(btn);
 
-  userColor = btn.getAttribute("id");
+  let userColor = btn.getAttribute("id");
   userSeq.push(userColor);
 
   checksAns(userSeq.length - 1);
