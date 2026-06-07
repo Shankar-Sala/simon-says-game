@@ -14,7 +14,7 @@
 
 <p>
 👉 
-<a href="https://simonsayslive.netlify.app/" target="_blank">
+<a href="https://simon-says-web-game.netlify.app/" target="_blank">
   Play Simon Says Game
 </a>
 </p>
